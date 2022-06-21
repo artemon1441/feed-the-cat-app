@@ -23,8 +23,8 @@ export default function Card({header, weight, name, subName, descriprion, disabl
   }
   
   function buy(){
-    setBorderDefaultColor('#D91667')
-    setSelected(true)
+    setSelected(!selected)
+    selected ? setBorderDefaultColor('#D91667') : setBorderDefaultColor('#1698D9')
   }
 
   return (
